@@ -28,6 +28,12 @@
 		1CAE3B5228D37F0D008E10A3 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5128D37F0D008E10A3 /* CustomColor.swift */; };
 		1CAE3B5428D37F25008E10A3 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5328D37F25008E10A3 /* PrimaryButton.swift */; };
 		1CAE3B5628D37F43008E10A3 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */; };
+		5476D0F728DE004C005274D2 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5476D0F328DE004C005274D2 /* Promo.swift */; };
+		5476D0F828DE004C005274D2 /* DRLoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5476D0F428DE004C005274D2 /* DRLoginResponse.swift */; };
+		5476D0FC28DE005C005274D2 /* RegisterConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5476D0FA28DE005C005274D2 /* RegisterConfirmationViewController.swift */; };
+		5476D0FD28DE005C005274D2 /* RegisterConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5476D0FB28DE005C005274D2 /* RegisterConfirmationViewController.xib */; };
+		5476D10428DE056D005274D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5476D10228DE056D005274D2 /* HomeViewController.swift */; };
+		5476D10528DE056D005274D2 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5476D10328DE056D005274D2 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,12 @@
 		1CAE3B5128D37F0D008E10A3 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		1CAE3B5328D37F25008E10A3 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
+		5476D0F328DE004C005274D2 /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		5476D0F428DE004C005274D2 /* DRLoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRLoginResponse.swift; sourceTree = "<group>"; };
+		5476D0FA28DE005C005274D2 /* RegisterConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterConfirmationViewController.swift; sourceTree = "<group>"; };
+		5476D0FB28DE005C005274D2 /* RegisterConfirmationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterConfirmationViewController.xib; sourceTree = "<group>"; };
+		5476D10228DE056D005274D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5476D10328DE056D005274D2 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +141,8 @@
 				1CAE36DC28D36F80008E10A3 /* SignIn */,
 				1CAE36D528D2F5F4008E10A3 /* SignUp */,
 				1CAE36CD28D2F54D008E10A3 /* Welcome */,
+				5476D0EF28DE004C005274D2 /* Home */,
+				5476D0F928DE005C005274D2 /* RegisterConfirmation */,
 				1CAE36A828D26732008E10A3 /* LaunchScreen.storyboard */,
 				1CAE36AB28D26732008E10A3 /* Info.plist */,
 			);
@@ -209,6 +223,34 @@
 				1CAE36E828D371BC008E10A3 /* LocalizableKeys.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		5476D0EF28DE004C005274D2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5476D0F228DE004C005274D2 /* Model */,
+				5476D10228DE056D005274D2 /* HomeViewController.swift */,
+				5476D10328DE056D005274D2 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5476D0F228DE004C005274D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5476D0F328DE004C005274D2 /* Promo.swift */,
+				5476D0F428DE004C005274D2 /* DRLoginResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5476D0F928DE005C005274D2 /* RegisterConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				5476D0FA28DE005C005274D2 /* RegisterConfirmationViewController.swift */,
+				5476D0FB28DE005C005274D2 /* RegisterConfirmationViewController.xib */,
+			);
+			path = RegisterConfirmation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +357,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5476D0FD28DE005C005274D2 /* RegisterConfirmationViewController.xib in Resources */,
 				1CAE36E728D37190008E10A3 /* Localizable.strings in Resources */,
 				1CAE36AA28D26732008E10A3 /* LaunchScreen.storyboard in Resources */,
 				1CAE36A728D26732008E10A3 /* Assets.xcassets in Resources */,
 				1CAE36DB28D2F6C2008E10A3 /* SignUp.storyboard in Resources */,
+				5476D10528DE056D005274D2 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,8 +389,12 @@
 			files = (
 				1CAE3B5628D37F43008E10A3 /* PrimaryTextField.swift in Sources */,
 				1CAE36DF28D36FE6008E10A3 /* SignInView.swift in Sources */,
+				5476D0FC28DE005C005274D2 /* RegisterConfirmationViewController.swift in Sources */,
 				1CAE36E128D3700D008E10A3 /* SignInConstants.swift in Sources */,
+				5476D0F728DE004C005274D2 /* Promo.swift in Sources */,
+				5476D10428DE056D005274D2 /* HomeViewController.swift in Sources */,
 				1CAE3B5228D37F0D008E10A3 /* CustomColor.swift in Sources */,
+				5476D0F828DE004C005274D2 /* DRLoginResponse.swift in Sources */,
 				1CAE36D128D2F5AE008E10A3 /* WelcomeView.swift in Sources */,
 				1CAE36D928D2F657008E10A3 /* SignUpViewController.swift in Sources */,
 				1CAE3B5428D37F25008E10A3 /* PrimaryButton.swift in Sources */,
@@ -454,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -508,7 +556,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -532,6 +580,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = SignUp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,7 +590,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -559,6 +608,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = SignUp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -568,7 +618,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
